@@ -14,6 +14,25 @@ class Contact
     protected $name;
 
     /**
+     * @Assert\NotBlank()
+     * @Constraint(validator = "postcode", options = {"locale" = "en_GB"})
+     */
+    protected $postCode;
+
+    /**
+     * @Assert\NotBlank()
+     * @Constraint(validator = "hostname")
+     */
+    protected $domain;
+
+    /**
+     * @Assert\NotBlank()
+     * @Constraint(validator = "isbn")
+     */
+    protected $isbn;
+
+    /**
+     * @Assert\NotBlank()
      * @Constraint(validator = "creditcard")
      */
     protected $creditCard;
@@ -37,6 +56,36 @@ class Contact
     public function setName($name)
     {
         $this->name = $name;
+    }
+
+    public function getPostCode()
+    {
+        return $this->postCode;
+    }
+
+    public function setPostCode($postCode)
+    {
+        $this->postCode = $postCode;
+    }
+
+    public function getDomain()
+    {
+        return $this->domain;
+    }
+
+    public function setDomain($domain)
+    {
+        $this->domain = $domain;
+    }
+
+    public function getIsbn()
+    {
+        return $this->isbn;
+    }
+
+    public function setIsbn($isbn)
+    {
+        $this->isbn = $isbn;
     }
 
     public function getCreditCard()
