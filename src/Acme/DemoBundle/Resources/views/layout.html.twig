@@ -1,11 +1,13 @@
 {% extends "TwigBundle::layout.html.twig" %}
 
+{% set metadata = sylius_settings_all('default') %}
+
 {% block head %}
     <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
     <link rel="stylesheet" href="{{ asset('bundles/acmedemo/css/demo.css') }}" />
 {% endblock %}
 
-{% block title 'Demo Bundle' %}
+{% block title metadata.title %}
 
 {% block body %}
     {% for flashMessage in app.session.flashbag.get('notice') %}

@@ -1,7 +1,5 @@
 {% extends 'AcmeDemoBundle::layout.html.twig' %}
 
-{% block title %}Symfony - Welcome{% endblock %}
-
 {% block content_header '' %}
 
 {% block content %}
@@ -9,7 +7,7 @@
 
     <h1 class="title">Welcome!</h1>
 
-    <p>Congratulations! You have successfully installed a new Symfony application.</p>
+    <p>Click configure button to change metadata of this page.</p>
 
     <div class="symfony-blocks-welcome">
         <div class="block-quick-tour">
@@ -29,10 +27,10 @@
                 <div class="illustration">
                     <img src="{{ asset('bundles/acmedemo/images/welcome-configure.gif') }}" alt="Configure your application" />
                 </div>
-                <a href="{{ path('_configurator_home') }}" class="sf-button sf-button-selected">
+                <a href="{{ path('sylius_settings') }}" class="sf-button sf-button-selected">
                     <span class="border-l">
                         <span class="border-r">
-                            <span class="btn-bg">Configure</span>
+                            <span class="btn-bg">Configure metadata</span>
                         </span>
                     </span>
                 </a>

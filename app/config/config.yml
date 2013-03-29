@@ -61,3 +61,11 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+sylius_settings:
+    driver: doctrine/orm
+
+liip_doctrine_cache:
+    namespaces:
+        sylius_settings:
+            type: file_system

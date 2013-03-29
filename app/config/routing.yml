@@ -1,0 +1,3 @@
+sylius_settings_meta:
+    resource: @SyliusSettingsBundle/Resources/config/routing.yml
+    prefix: /meta
