@@ -1,0 +1,7 @@
+{% extends 'SyliusResourceBundle::layout.html.twig' %}
+
+{% block sylius_content %}
+    <h1>I</h1>
+    <a href="{{ path('_welcome') }}" class="btn btn-success"><i class="icon-backward icon-white"></i> back</a>
+    <a href="{{ path('sylius_flow_forward', {'scenarioAlias': 'sylius_flow', 'stepName': 'i'}) }}" class="btn btn-success">forward <i class="icon-forward icon-white"></i></a>
+{% endblock %}

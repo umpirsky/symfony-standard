@@ -14,5 +14,12 @@
             <tag name="kernel.event_listener" event="kernel.controller" method="onKernelController" />
             <argument type="service" id="twig.extension.acme.demo" />
         </service>
+
+        <service id="sylius.scenario.flow" class="Acme\DemoBundle\Process\SyliusScenario">
+            <call method="setContainer">
+                <argument type="service" id="service_container" />
+            </call>
+            <tag name="sylius.process.scenario" alias="sylius_flow" />
+        </service>
     </services>
 </container>

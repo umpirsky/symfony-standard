@@ -1,0 +1,6 @@
+{% extends 'SyliusResourceBundle::layout.html.twig' %}
+
+{% block sylius_content %}
+    <h1>I Love Sylius!</h1>
+    <a href="{{ path('sylius_flow_start', {'scenarioAlias': 'sylius_flow'}) }}" class="btn btn-success"><i class="icon-heart icon-white"></i> do it again</a>
+{% endblock %}
