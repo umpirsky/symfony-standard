@@ -1,3 +1,14 @@
 sylius_assortment:
     resource: @SyliusAssortmentBundle/Resources/config/routing.yml
     prefix: /assortment
+
+sylius_taxonomies:
+    resource: @SyliusTaxonomiesBundle/Resources/config/routing.yml
+    prefix: /taxonomies
+
+sylius_product_index_by_taxon:
+    pattern: /t/{permalink}
+    defaults:
+        _controller: sylius.controller.product:indexByTaxonAction
+        _sylius:
+            template: AcmeDemoBundle:Product:indexByTaxon.html.twig

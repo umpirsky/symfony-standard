@@ -1,5 +1,5 @@
 {
-    "hash": "d5273e268230a2b023f420028286bdcf",
+    "hash": "3bbed7cfd73dfce18283f05b99fb8736",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2021,6 +2021,71 @@
                 "storage"
             ],
             "time": "2013-03-26 23:30:57"
+        },
+        {
+            "name": "sylius/taxonomies-bundle",
+            "version": "dev-master",
+            "target-dir": "Sylius/Bundle/TaxonomiesBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Sylius/SyliusTaxonomiesBundle.git",
+                "reference": "c7961ee3400add98f8d487be7624127133fd6098"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Sylius/SyliusTaxonomiesBundle/zipball/c7961ee3400add98f8d487be7624127133fd6098",
+                "reference": "c7961ee3400add98f8d487be7624127133fd6098",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": ">=2.3,<3.0",
+                "php": ">=5.3.3",
+                "sylius/resource-bundle": "0.1.*",
+                "symfony/framework-bundle": ">=2.2,<2.3-dev"
+            },
+            "require-dev": {
+                "phpspec/phpspec2": "dev-develop",
+                "symfony/form": ">=2.2,<3.0",
+                "twig/twig": "*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Sylius\\Bundle\\TaxonomiesBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paweł Jędrzejewski",
+                    "email": "pjedrzejewski@diweb.pl",
+                    "homepage": "http://pjedrzejewski.com"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/Sylius/SyliusTaxonomiesBundle/contributors"
+                }
+            ],
+            "description": "Flexible categorization system for Symfony2.",
+            "homepage": "http://sylius.org",
+            "keywords": [
+                "categorization",
+                "category",
+                "ecommerce",
+                "shop",
+                "sylius",
+                "taxonomies",
+                "taxonomy"
+            ],
+            "time": "2013-03-03 17:31:30"
         },
         {
             "name": "symfony/assetic-bundle",

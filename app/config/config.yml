@@ -65,11 +65,18 @@ swiftmailer:
 stof_doctrine_extensions:
     orm:
         default:
+            tree: true
             sluggable: true
             timestampable: true
 
 sylius_assortment:
-        driver: doctrine/orm
-        classes:
-            product:
-                model: Acme\DemoBundle\Entity\Product
+    driver: doctrine/orm
+    classes:
+        product:
+            model: Acme\DemoBundle\Entity\Product
+            repository: Acme\DemoBundle\Repository\ProductRepository
+            form: Acme\DemoBundle\Form\ProductType
+            controller: Acme\DemoBundle\Controller\ProductController
+
+sylius_taxonomies:
+    driver: doctrine/orm
