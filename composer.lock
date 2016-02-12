@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1b97e5a240e769e4a7afa9b8c4de1849",
-    "content-hash": "d6693c8d3ad436468f9258f22a5a49b0",
+    "hash": "dedf60191d1050e390eb4c360bfd471d",
+    "content-hash": "7b241d19d52e15dd67c1649be58f110d",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -950,6 +950,86 @@
             "time": "2015-10-14 12:51:02"
         },
         {
+            "name": "octopush/sms-api",
+            "version": "dev-feature/2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/umpirsky/sms-api-php.git",
+                "reference": "8089d826408c63ebca89c8bfa4c919d9dd17fc73"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/umpirsky/sms-api-php/zipball/8089d826408c63ebca89c8bfa4c919d9dd17fc73",
+                "reference": "8089d826408c63ebca89c8bfa4c919d9dd17fc73",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-libxml": "*",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Octopush\\Api\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Saša Stamenković",
+                    "email": "umpirsky@gmail.com"
+                }
+            ],
+            "description": "Octopush - Send SMS like a PRO",
+            "support": {
+                "source": "https://github.com/umpirsky/sms-api-php/tree/feature/2.0"
+            },
+            "time": "2016-02-12 16:24:37"
+        },
+        {
+            "name": "octopush/sms-bundle",
+            "version": "dev-feature/init",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/umpirsky/OctopushSMSBundle.git",
+                "reference": "22cc9a2957372d12fce4f9236f94fa4d21698733"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/umpirsky/OctopushSMSBundle/zipball/22cc9a2957372d12fce4f9236f94fa4d21698733",
+                "reference": "22cc9a2957372d12fce4f9236f94fa4d21698733",
+                "shasum": ""
+            },
+            "require": {
+                "octopush/sms-api": "dev-feature/2.0",
+                "php": ">=5.4",
+                "symfony/framework-bundle": "~2.3|~3.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Octopush\\Bundle\\SMSBundle\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Saša Stamenković",
+                    "email": "umpirsky@gmail.com"
+                }
+            ],
+            "description": "Integrates the Octopush SMS API client with Symfony.",
+            "support": {
+                "source": "https://github.com/umpirsky/OctopushSMSBundle/tree/feature/init"
+            },
+            "time": "2016-02-12 21:44:29"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "1.1.5",
             "source": {
@@ -1748,7 +1828,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/36c2961def4c5df511abe2a64b5d58e62a3a932c",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/ffa5790f6e6522d819a45010c7c245bf2664ae4d",
                 "reference": "36c2961def4c5df511abe2a64b5d58e62a3a932c",
                 "shasum": ""
             },
@@ -2045,7 +2125,9 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "symfony/symfony": 20
+        "symfony/symfony": 20,
+        "octopush/sms-api": 20,
+        "octopush/sms-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

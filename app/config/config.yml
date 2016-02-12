@@ -67,3 +67,7 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+octopush_sms:
+    user_login: "**********@*******"
+    api_key: "****************"
