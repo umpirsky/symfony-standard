@@ -5,6 +5,14 @@
         <div id="container">
             <div id="welcome">
                 <h1><span>Welcome to</span> Symfony {{ constant('Symfony\\Component\\HttpKernel\\Kernel::VERSION') }}</h1>
+                <h2>Go to <a href="{{ path('route66') }}">Route 66</a> in current language</h2>
+                <p>Or visit it in:
+                    <ul>
+                        <li><a href="{{ path('route66', {_locale: 'sr'}) }}">Serbian Route 66</a></li>
+                        <li><a href="{{ path('route66', {_locale: 'ru'}) }}">Russian Route 66</a></li>
+                        <li><a href="{{ path('route66', {_locale: 'es'}) }}">Spanish Route 66</a></li>
+                    </ul>
+                </p>
             </div>
 
             <div id="status">
