@@ -22,7 +22,8 @@
         "symfony/polyfill-apcu": "^1.0",
         "symfony/swiftmailer-bundle": "^2.3.10",
         "symfony/symfony": "3.3.x-dev",
-        "twig/twig": "^1.0||^2.0"
+        "twig/twig": "^1.0||^2.0",
+        "umpirsky/i18n-routing-bundle": "0.0.1.x-dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
@@ -46,7 +47,7 @@
     },
     "config": {
         "platform": {
-            "php": "5.5.9"
+            "php": "7.0"
         },
         "sort-packages": true
     },
