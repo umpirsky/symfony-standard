@@ -69,4 +69,4 @@ swiftmailer:
     spool: { type: memory }
 
 umpirsky_i18n_routing:
-    locales: [sr, ru, pl]
+    locales: [en, sr, ru, pl, de, es, it, mk, fr, gr]
