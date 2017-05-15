@@ -23,7 +23,7 @@
         "symfony/swiftmailer-bundle": "^2.3.10",
         "symfony/symfony": "3.3.x-dev",
         "twig/twig": "^1.0||^2.0",
-        "umpirsky/i18n-routing-bundle": "0.0.1.x-dev"
+        "umpirsky/i18n-routing-bundle": "issue-6-dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

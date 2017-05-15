@@ -69,4 +69,6 @@ swiftmailer:
     spool: { type: memory }
 
 umpirsky_i18n_routing:
+    default_locale: en
     locales: [en, sr, ru, pl, de, es, it, mk, fr, gr]
+    strategy: prefix

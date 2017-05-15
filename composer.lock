@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "aacc8bacb3405ef56b57a0f950884ccf",
+    "content-hash": "032a00e9a487209765a0017fb1b6f882",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -2247,16 +2247,16 @@
         },
         {
             "name": "umpirsky/i18n-routing-bundle",
-            "version": "dev-master",
+            "version": "dev-issue-6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/umpirsky/UmpirskyI18nRoutingBundle.git",
-                "reference": "64ddfe8c98fd5ae3146a3bcb8a6ed7519e92cae8"
+                "reference": "42e3856eff02b4756b3f77118cf989fe9cea2202"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/umpirsky/UmpirskyI18nRoutingBundle/zipball/64ddfe8c98fd5ae3146a3bcb8a6ed7519e92cae8",
-                "reference": "64ddfe8c98fd5ae3146a3bcb8a6ed7519e92cae8",
+                "url": "https://api.github.com/repos/umpirsky/UmpirskyI18nRoutingBundle/zipball/42e3856eff02b4756b3f77118cf989fe9cea2202",
+                "reference": "42e3856eff02b4756b3f77118cf989fe9cea2202",
                 "shasum": ""
             },
             "require": {
@@ -2265,7 +2265,8 @@
             },
             "require-dev": {
                 "phpspec/phpspec": "^3.3",
-                "phpunit/phpunit": "^6.1"
+                "phpunit/phpunit": "^6.1",
+                "symfony/var-dumper": "~2.7|~3.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -2296,7 +2297,7 @@
                 "symfony",
                 "translation"
             ],
-            "time": "2017-05-07 09:45:03"
+            "time": "2017-05-15 07:02:30"
         }
     ],
     "packages-dev": [
